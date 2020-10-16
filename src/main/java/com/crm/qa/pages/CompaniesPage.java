@@ -22,7 +22,7 @@ public class CompaniesPage extends TestBase {
 	@FindBy(xpath="//th[text()='Name']")
 	WebElement namecheckbox;
 	
-	@FindBy(xpath="//td[text()='DipakPatel']")
+	@FindBy(xpath="//div[@class='ui fluid container']//tr[1]//td[2]")
 	WebElement selectdipak;
 	
 	@FindBy(xpath="//td[text()='ManishPatel']")
@@ -48,8 +48,7 @@ public class CompaniesPage extends TestBase {
 	
 	public boolean selectNameCheckBox() {
 		namecheckbox.click();
-		selectdipak.isEnabled();
-	return	selectmanish.isEnabled();
+		return selectdipak.isEnabled();
 		
 	}
 	
