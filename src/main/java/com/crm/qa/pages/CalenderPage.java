@@ -5,8 +5,10 @@ import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 
-import com.crm.qa.base.TestBase;
+
 import org.testng.Assert;
+
+import com.crm.qa.base.TestBase;
 
 public class CalenderPage extends TestBase{
 
@@ -16,7 +18,7 @@ public class CalenderPage extends TestBase{
 	@FindBy(xpath="//div[@class='rbc-date-cell']//a[text()='02']")
 	WebElement selectcalenderdate;
 
-	@FindBy(xpath="//span[@class='rbc-toolbar-label'][text()='0002 Oct 02']")
+	@FindBy(xpath="//span[@class='rbc-toolbar-label'][text()='0002 Dec 02']")
 	WebElement correctdate;
 	
 	@FindBy(xpath="//h3[text()='Events']")
