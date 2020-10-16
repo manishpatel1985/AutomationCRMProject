@@ -24,7 +24,7 @@
     <div class="top-banner-root">
       <span class="top-banner-title-font">Test results</span>
       <br/>
-      <span class="top-banner-font-1">1 suite, 2 failed tests</span>
+      <span class="top-banner-font-1">1 suite, 1 failed test</span>
     </div> <!-- top-banner-root -->
     <div class="navigator-root">
       <div class="navigator-suite-header">
@@ -91,7 +91,7 @@
               <div class="suite-section-content">
                 <ul>
                   <li>
-                    <span class="method-stats">25 methods, 2 failed,   23 passed</span>
+                    <span class="method-stats">25 methods, 1 failed,   24 passed</span>
                   </li>
                   <li>
                     <span class="method-list-title failed">Failed methods</span>
@@ -103,11 +103,6 @@
                       <span>
                         <img width="3%" src="failed.png"/>
                         <a href="#" class="method navigator-link" panel-name="suite-Suite" title="com.crm.qa.testscases.CalenderPageTest" hash-for-method="selectMonthOnCalenderTest">selectMonthOnCalenderTest</a> <!-- method navigator-link -->
-                      </span>
-                      <br/>
-                      <span>
-                        <img width="3%" src="failed.png"/>
-                        <a href="#" class="method navigator-link" panel-name="suite-Suite" title="com.crm.qa.testscases.CompaniesPageTest" hash-for-method="selectNameCheckBoxTest">selectNameCheckBoxTest</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                     </div> <!-- method-list-content failed suite-Suite -->
@@ -196,12 +191,12 @@
                       <br/>
                       <span>
                         <img width="3%" src="passed.png"/>
-                        <a href="#" class="method navigator-link" panel-name="suite-Suite" title="com.crm.qa.testscases.ContactsPageTest" hash-for-method="createNewContactsTest(colin, munn, robin, amazone)">createNewContactsTest(colin, munn, robin, amazone)</a> <!-- method navigator-link -->
+                        <a href="#" class="method navigator-link" panel-name="suite-Suite" title="com.crm.qa.testscases.ContactsPageTest" hash-for-method="createNewContactsTest(matt, girt, hose, google)">createNewContactsTest(matt, girt, hose, google)</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                       <span>
                         <img width="3%" src="passed.png"/>
-                        <a href="#" class="method navigator-link" panel-name="suite-Suite" title="com.crm.qa.testscases.ContactsPageTest" hash-for-method="createNewContactsTest(matt, girt, hose, google)">createNewContactsTest(matt, girt, hose, google)</a> <!-- method navigator-link -->
+                        <a href="#" class="method navigator-link" panel-name="suite-Suite" title="com.crm.qa.testscases.ContactsPageTest" hash-for-method="createNewContactsTest(colin, munn, robin, amazone)">createNewContactsTest(colin, munn, robin, amazone)</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                       <span>
@@ -234,6 +229,11 @@
                         <a href="#" class="method navigator-link" panel-name="suite-Suite" title="com.crm.qa.testscases.CompaniesPageTest" hash-for-method="selectDeleteTest">selectDeleteTest</a> <!-- method navigator-link -->
                       </span>
                       <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Suite" title="com.crm.qa.testscases.CompaniesPageTest" hash-for-method="selectNameCheckBoxTest">selectNameCheckBoxTest</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
                     </div> <!-- method-list-content passed suite-Suite -->
                   </li>
                 </ul>
@@ -263,8 +263,8 @@ For documentation on this error, please visit: http://seleniumhq.org/exceptions/
 Build info: version: &apos;3.14.0&apos;, revision: &apos;aacccce0&apos;, time: &apos;2018-08-02T20:19:58.91Z&apos;
 System info: host: &apos;DESKTOP-BPNON4T&apos;, ip: &apos;192.168.0.28&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_241&apos;
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 85.0.4183.121, chrome: {chromedriverVersion: 85.0.4183.87 (cd6713ebf92fa..., userDataDir: C:\Users\hetal\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:51992}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:virtualAuthenticators: true}
-Session ID: 5d38b087e60ffcf1d6bb05e318f72b0e
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 85.0.4183.121, chrome: {chromedriverVersion: 85.0.4183.87 (cd6713ebf92fa..., userDataDir: C:\Users\hetal\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:54842}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:virtualAuthenticators: true}
+Session ID: ca5803f35766b576a3249e8f829e6993
 *** Element info: {Using=xpath, value=//span[@class=&apos;rbc-toolbar-label&apos;][text()=&apos;0002 Oct 02&apos;]}
 	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
 	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
@@ -284,53 +284,6 @@ Session ID: 5d38b087e60ffcf1d6bb05e318f72b0e
 	at com.sun.proxy.$Proxy12.isEnabled(Unknown Source)
 	at com.crm.qa.pages.CalenderPage.selectMonthOnCalender(CalenderPage.java:38)
 	at com.crm.qa.testscases.CalenderPageTest.selectMonthOnCalenderTest(CalenderPageTest.java:37)
-	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
-	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
-	at java.lang.Thread.run(Thread.java:748)
-... Removed 17 stack frames
-</div> <!-- stack-trace -->
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-            </div> <!-- main-panel-content rounded-window-bottom -->
-          </div> <!-- suite-Suite-class-failed -->
-          <div class="suite-Suite-class-failed">
-            <div class="main-panel-header rounded-window-top">
-              <img src="failed.png"/>
-              <span class="class-name">com.crm.qa.testscases.CompaniesPageTest</span>
-            </div> <!-- main-panel-header rounded-window-top -->
-            <div class="main-panel-content rounded-window-bottom">
-              <div class="method">
-                <div class="method-content">
-                  <a name="selectNameCheckBoxTest">
-                  </a> <!-- selectNameCheckBoxTest -->
-                  <span class="method-name">selectNameCheckBoxTest</span>
-                  <div class="stack-trace">org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//td[text()=&apos;DipakPatel&apos;]&quot;}
-  (Session info: chrome=85.0.4183.121)
-For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
-Build info: version: &apos;3.14.0&apos;, revision: &apos;aacccce0&apos;, time: &apos;2018-08-02T20:19:58.91Z&apos;
-System info: host: &apos;DESKTOP-BPNON4T&apos;, ip: &apos;192.168.0.28&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_241&apos;
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 85.0.4183.121, chrome: {chromedriverVersion: 85.0.4183.87 (cd6713ebf92fa..., userDataDir: C:\Users\hetal\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:52027}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:virtualAuthenticators: true}
-Session ID: a30280af55b1b06710203f4637d9b30e
-*** Element info: {Using=xpath, value=//td[text()=&apos;DipakPatel&apos;]}
-	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
-	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
-	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
-	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:548)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:322)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:424)
-	at org.openqa.selenium.By$ByXPath.findElement(By.java:353)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:314)
-	at org.openqa.selenium.support.events.EventFiringWebDriver.lambda$new$1(EventFiringWebDriver.java:105)
-	at com.sun.proxy.$Proxy8.findElement(Unknown Source)
-	at org.openqa.selenium.support.events.EventFiringWebDriver.findElement(EventFiringWebDriver.java:194)
-	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:69)
-	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
-	at com.sun.proxy.$Proxy12.isEnabled(Unknown Source)
-	at com.crm.qa.pages.CompaniesPage.selectNameCheckBox(CompaniesPage.java:51)
-	at com.crm.qa.testscases.CompaniesPageTest.selectNameCheckBoxTest(CompaniesPageTest.java:39)
 	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
 	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
 	at java.lang.Thread.run(Thread.java:748)
@@ -413,18 +366,18 @@ Session ID: a30280af55b1b06710203f4637d9b30e
             <div class="main-panel-content rounded-window-bottom">
               <div class="method">
                 <div class="method-content">
-                  <a name="createNewContactsTest(colin, munn, robin, amazone)">
-                  </a> <!-- createNewContactsTest(colin, munn, robin, amazone) -->
-                  <span class="method-name">createNewContactsTest</span>
-                  <span class="parameters">(colin, munn, robin, amazone)</span>
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-              <div class="method">
-                <div class="method-content">
                   <a name="createNewContactsTest(matt, girt, hose, google)">
                   </a> <!-- createNewContactsTest(matt, girt, hose, google) -->
                   <span class="method-name">createNewContactsTest</span>
                   <span class="parameters">(matt, girt, hose, google)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="createNewContactsTest(colin, munn, robin, amazone)">
+                  </a> <!-- createNewContactsTest(colin, munn, robin, amazone) -->
+                  <span class="method-name">createNewContactsTest</span>
+                  <span class="parameters">(colin, munn, robin, amazone)</span>
                 </div> <!-- method-content -->
               </div> <!-- method -->
               <div class="method">
@@ -550,6 +503,13 @@ Session ID: a30280af55b1b06710203f4637d9b30e
                   <span class="method-name">selectDeleteTest</span>
                 </div> <!-- method-content -->
               </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="selectNameCheckBoxTest">
+                  </a> <!-- selectNameCheckBoxTest -->
+                  <span class="method-name">selectNameCheckBoxTest</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
             </div> <!-- main-panel-content rounded-window-bottom -->
           </div> <!-- suite-Suite-class-passed -->
         </div> <!-- panel Suite -->
@@ -618,108 +578,108 @@ data.addRows(25);
 data.setCell(0, 0, 0)
 data.setCell(0, 1, 'selectMonthOnCalenderTest')
 data.setCell(0, 2, 'com.crm.qa.testscases.CalenderPageTest')
-data.setCell(0, 3, 20862);
+data.setCell(0, 3, 20823);
 data.setCell(1, 0, 1)
-data.setCell(1, 1, 'selectNameCheckBoxTest')
-data.setCell(1, 2, 'com.crm.qa.testscases.CompaniesPageTest')
-data.setCell(1, 3, 20705);
+data.setCell(1, 1, 'createNewContactsTest')
+data.setCell(1, 2, 'com.crm.qa.testscases.ContactsPageTest')
+data.setCell(1, 3, 2618);
 data.setCell(2, 0, 2)
-data.setCell(2, 1, 'createNewContactsTest')
-data.setCell(2, 2, 'com.crm.qa.testscases.ContactsPageTest')
-data.setCell(2, 3, 2589);
+data.setCell(2, 1, 'clickOnContactsLinkTest')
+data.setCell(2, 2, 'com.crm.qa.testscases.HomePageTest')
+data.setCell(2, 3, 2319);
 data.setCell(3, 0, 3)
-data.setCell(3, 1, 'clickOnContactsLinkTest')
-data.setCell(3, 2, 'com.crm.qa.testscases.HomePageTest')
-data.setCell(3, 3, 2238);
+data.setCell(3, 1, 'correctUserNameAndCorrectPasswordloginPageTest')
+data.setCell(3, 2, 'com.crm.qa.testscases.LoginPageTest')
+data.setCell(3, 3, 2164);
 data.setCell(4, 0, 4)
 data.setCell(4, 1, 'createNewContactsTest')
 data.setCell(4, 2, 'com.crm.qa.testscases.ContactsPageTest')
-data.setCell(4, 3, 2168);
+data.setCell(4, 3, 2144);
 data.setCell(5, 0, 5)
 data.setCell(5, 1, 'createNewContactsTest')
 data.setCell(5, 2, 'com.crm.qa.testscases.ContactsPageTest')
-data.setCell(5, 3, 2048);
+data.setCell(5, 3, 2100);
 data.setCell(6, 0, 6)
 data.setCell(6, 1, 'SignUpPageTest')
 data.setCell(6, 2, 'com.crm.qa.testscases.LoginPageTest')
-data.setCell(6, 3, 1783);
+data.setCell(6, 3, 1808);
 data.setCell(7, 0, 7)
-data.setCell(7, 1, 'correctUserNameAndCorrectPasswordloginPageTest')
-data.setCell(7, 2, 'com.crm.qa.testscases.LoginPageTest')
-data.setCell(7, 3, 1391);
+data.setCell(7, 1, 'selectNameCheckBoxTest')
+data.setCell(7, 2, 'com.crm.qa.testscases.CompaniesPageTest')
+data.setCell(7, 3, 814);
 data.setCell(8, 0, 8)
-data.setCell(8, 1, 'clickOnEmailLinkPageTest')
-data.setCell(8, 2, 'com.crm.qa.testscases.HomePageTest')
-data.setCell(8, 3, 1023);
+data.setCell(8, 1, 'incorrectPasswordloginPageTest')
+data.setCell(8, 2, 'com.crm.qa.testscases.LoginPageTest')
+data.setCell(8, 3, 410);
 data.setCell(9, 0, 9)
-data.setCell(9, 1, 'clickOnFormsPageLinkTest')
+data.setCell(9, 1, 'clickOnEmailLinkPageTest')
 data.setCell(9, 2, 'com.crm.qa.testscases.HomePageTest')
-data.setCell(9, 3, 559);
+data.setCell(9, 3, 409);
 data.setCell(10, 0, 10)
-data.setCell(10, 1, 'incorrectPasswordloginPageTest')
+data.setCell(10, 1, 'incorrectUserNameloginTest')
 data.setCell(10, 2, 'com.crm.qa.testscases.LoginPageTest')
-data.setCell(10, 3, 476);
+data.setCell(10, 3, 404);
 data.setCell(11, 0, 11)
-data.setCell(11, 1, 'incorrectUserNameloginTest')
-data.setCell(11, 2, 'com.crm.qa.testscases.LoginPageTest')
-data.setCell(11, 3, 425);
+data.setCell(11, 1, 'clickOnCallsLinkTest')
+data.setCell(11, 2, 'com.crm.qa.testscases.HomePageTest')
+data.setCell(11, 3, 372);
 data.setCell(12, 0, 12)
-data.setCell(12, 1, 'clickOnCampaignLinkPageTest')
+data.setCell(12, 1, 'clickOnDealsLinkTest')
 data.setCell(12, 2, 'com.crm.qa.testscases.HomePageTest')
-data.setCell(12, 3, 393);
+data.setCell(12, 3, 363);
 data.setCell(13, 0, 13)
-data.setCell(13, 1, 'selectDeleteTest')
-data.setCell(13, 2, 'com.crm.qa.testscases.DealsPageTest')
-data.setCell(13, 3, 353);
+data.setCell(13, 1, 'clickOnCampaignLinkPageTest')
+data.setCell(13, 2, 'com.crm.qa.testscases.HomePageTest')
+data.setCell(13, 3, 360);
 data.setCell(14, 0, 14)
-data.setCell(14, 1, 'clickOnTasksLinkTest')
+data.setCell(14, 1, 'clickOnCasesLinkTest')
 data.setCell(14, 2, 'com.crm.qa.testscases.HomePageTest')
-data.setCell(14, 3, 349);
+data.setCell(14, 3, 331);
 data.setCell(15, 0, 15)
-data.setCell(15, 1, 'clickOnCompniesLinkTest')
+data.setCell(15, 1, 'clickOnTasksLinkTest')
 data.setCell(15, 2, 'com.crm.qa.testscases.HomePageTest')
-data.setCell(15, 3, 337);
+data.setCell(15, 3, 322);
 data.setCell(16, 0, 16)
-data.setCell(16, 1, 'clickOnCasesLinkTest')
+data.setCell(16, 1, 'clickOnFormsPageLinkTest')
 data.setCell(16, 2, 'com.crm.qa.testscases.HomePageTest')
-data.setCell(16, 3, 300);
+data.setCell(16, 3, 272);
 data.setCell(17, 0, 17)
-data.setCell(17, 1, 'clickOnDealsLinkTest')
+data.setCell(17, 1, 'clickOnCompniesLinkTest')
 data.setCell(17, 2, 'com.crm.qa.testscases.HomePageTest')
-data.setCell(17, 3, 258);
+data.setCell(17, 3, 267);
 data.setCell(18, 0, 18)
 data.setCell(18, 1, 'selectDeleteTest')
-data.setCell(18, 2, 'com.crm.qa.testscases.CompaniesPageTest')
-data.setCell(18, 3, 255);
+data.setCell(18, 2, 'com.crm.qa.testscases.DealsPageTest')
+data.setCell(18, 3, 237);
 data.setCell(19, 0, 19)
-data.setCell(19, 1, 'clickOnNewLinkTest')
-data.setCell(19, 2, 'com.crm.qa.testscases.CampaignsPageTest')
-data.setCell(19, 3, 235);
+data.setCell(19, 1, 'selectDeleteTest')
+data.setCell(19, 2, 'com.crm.qa.testscases.CompaniesPageTest')
+data.setCell(19, 3, 213);
 data.setCell(20, 0, 20)
-data.setCell(20, 1, 'clickOnCallsLinkTest')
+data.setCell(20, 1, 'clickOnDocumentsLinkPageTest')
 data.setCell(20, 2, 'com.crm.qa.testscases.HomePageTest')
-data.setCell(20, 3, 233);
+data.setCell(20, 3, 191);
 data.setCell(21, 0, 21)
-data.setCell(21, 1, 'clickOnDocumentsLinkPageTest')
-data.setCell(21, 2, 'com.crm.qa.testscases.HomePageTest')
-data.setCell(21, 3, 179);
+data.setCell(21, 1, 'clickOnNewLinkTest')
+data.setCell(21, 2, 'com.crm.qa.testscases.CampaignsPageTest')
+data.setCell(21, 3, 174);
 data.setCell(22, 0, 22)
 data.setCell(22, 1, 'clickOnCheckBoxTest')
 data.setCell(22, 2, 'com.crm.qa.testscases.DealsPageTest')
-data.setCell(22, 3, 176);
+data.setCell(22, 3, 126);
 data.setCell(23, 0, 23)
 data.setCell(23, 1, 'actionLabelCheckTest')
 data.setCell(23, 2, 'com.crm.qa.testscases.CompaniesPageTest')
-data.setCell(23, 3, 58);
+data.setCell(23, 3, 50);
 data.setCell(24, 0, 24)
 data.setCell(24, 1, 'loginPageTitleTest')
 data.setCell(24, 2, 'com.crm.qa.testscases.LoginPageTest')
-data.setCell(24, 3, 9);
+data.setCell(24, 3, 13);
 window.suiteTableData['Suite']= { tableData: data, tableDiv: 'times-div-Suite'}
 return data;
 }
               </script>
-              <span class="suite-total-time">Total running time: 59 seconds</span>
+              <span class="suite-total-time">Total running time: 39 seconds</span>
               <div id="times-div-Suite">
               </div> <!-- times-div-Suite -->
             </div> <!-- times-div -->
@@ -759,354 +719,352 @@ return data;
               </div> <!-- configuration-method before -->
               <div class="test-method">
                 <span class="method-name">clickOnNewLinkTest</span>
-                <span class="method-start">13065 ms</span>
+                <span class="method-start">12259 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">tearDown</span>
-                <span class="method-start">13303 ms</span>
+                <span class="method-start">12435 ms</span>
               </div> <!-- configuration-method after -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
               <div class="chronological-class-name">com.crm.qa.testscases.ContactsPageTest</div> <!-- chronological-class-name -->
               <div class="configuration-method before">
                 <span class="method-name">setUp</span>
-                <span class="method-start">15217 ms</span>
+                <span class="method-start">14235 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
                 <span class="method-name">createNewContactsTest(matt, girt, hose, google)</span>
-                <span class="method-start">25970 ms</span>
+                <span class="method-start">24880 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">tearDown</span>
-                <span class="method-start">28139 ms</span>
+                <span class="method-start">26982 ms</span>
               </div> <!-- configuration-method after -->
               <div class="configuration-method before">
                 <span class="method-name">setUp</span>
-                <span class="method-start">28873 ms</span>
+                <span class="method-start">27715 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
                 <span class="method-name">createNewContactsTest(colin, munn, robin, amazone)</span>
-                <span class="method-start">39051 ms</span>
+                <span class="method-start">39071 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">tearDown</span>
-                <span class="method-start">41100 ms</span>
+                <span class="method-start">41217 ms</span>
               </div> <!-- configuration-method after -->
               <div class="configuration-method before">
                 <span class="method-name">setUp</span>
-                <span class="method-start">41862 ms</span>
+                <span class="method-start">41984 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
                 <span class="method-name">createNewContactsTest(mattew, hayden, Dominic, Channel 9)</span>
-                <span class="method-start">52479 ms</span>
+                <span class="method-start">52304 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">tearDown</span>
-                <span class="method-start">55069 ms</span>
+                <span class="method-start">54923 ms</span>
               </div> <!-- configuration-method after -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
               <div class="chronological-class-name">com.crm.qa.testscases.LoginPageTest</div> <!-- chronological-class-name -->
               <div class="configuration-method before">
                 <span class="method-name">setUp</span>
-                <span class="method-start">55820 ms</span>
+                <span class="method-start">55639 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
                 <span class="method-name">loginPageTitleTest</span>
-                <span class="method-start">63954 ms</span>
+                <span class="method-start">63012 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">tearDown</span>
-                <span class="method-start">63964 ms</span>
+                <span class="method-start">63026 ms</span>
               </div> <!-- configuration-method after -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
               <div class="chronological-class-name">com.crm.qa.testscases.DealsPageTest</div> <!-- chronological-class-name -->
               <div class="configuration-method before">
                 <span class="method-name">setUp</span>
-                <span class="method-start">64654 ms</span>
+                <span class="method-start">63698 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
                 <span class="method-name">clickOnCheckBoxTest</span>
-                <span class="method-start">75542 ms</span>
+                <span class="method-start">73983 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">tearDown</span>
-                <span class="method-start">75719 ms</span>
+                <span class="method-start">74110 ms</span>
               </div> <!-- configuration-method after -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
               <div class="chronological-class-name">com.crm.qa.testscases.CalenderPageTest</div> <!-- chronological-class-name -->
               <div class="configuration-method before">
                 <span class="method-name">setUp</span>
-                <span class="method-start">76469 ms</span>
+                <span class="method-start">74845 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
                 <img src="failed.png">
                 </img>
                 <span class="method-name">selectMonthOnCalenderTest</span>
-                <span class="method-start">88285 ms</span>
+                <span class="method-start">84940 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">tearDown</span>
-                <span class="method-start">109160 ms</span>
+                <span class="method-start">105766 ms</span>
               </div> <!-- configuration-method after -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
               <div class="chronological-class-name">com.crm.qa.testscases.CompaniesPageTest</div> <!-- chronological-class-name -->
               <div class="configuration-method before">
                 <span class="method-name">setUp</span>
-                <span class="method-start">110244 ms</span>
+                <span class="method-start">106479 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
-                <img src="failed.png">
-                </img>
                 <span class="method-name">selectNameCheckBoxTest</span>
-                <span class="method-start">126861 ms</span>
+                <span class="method-start">117274 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">tearDown</span>
-                <span class="method-start">147570 ms</span>
+                <span class="method-start">118090 ms</span>
               </div> <!-- configuration-method after -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
               <div class="chronological-class-name">com.crm.qa.testscases.HomePageTest</div> <!-- chronological-class-name -->
               <div class="configuration-method before">
                 <span class="method-name">setUp</span>
-                <span class="method-start">148251 ms</span>
+                <span class="method-start">118863 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
                 <span class="method-name">clickOnContactsLinkTest</span>
-                <span class="method-start">158443 ms</span>
+                <span class="method-start">128428 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">tearDown</span>
-                <span class="method-start">160681 ms</span>
+                <span class="method-start">130748 ms</span>
               </div> <!-- configuration-method after -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
               <div class="chronological-class-name">com.crm.qa.testscases.LoginPageTest</div> <!-- chronological-class-name -->
               <div class="configuration-method before">
                 <span class="method-name">setUp</span>
-                <span class="method-start">161819 ms</span>
+                <span class="method-start">131503 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
                 <span class="method-name">correctUserNameAndCorrectPasswordloginPageTest</span>
-                <span class="method-start">169364 ms</span>
+                <span class="method-start">138898 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">tearDown</span>
-                <span class="method-start">170756 ms</span>
+                <span class="method-start">141063 ms</span>
               </div> <!-- configuration-method after -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
               <div class="chronological-class-name">com.crm.qa.testscases.DealsPageTest</div> <!-- chronological-class-name -->
               <div class="configuration-method before">
                 <span class="method-name">setUp</span>
-                <span class="method-start">171453 ms</span>
+                <span class="method-start">141799 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
                 <span class="method-name">selectDeleteTest</span>
-                <span class="method-start">182601 ms</span>
+                <span class="method-start">153807 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">tearDown</span>
-                <span class="method-start">182955 ms</span>
+                <span class="method-start">154045 ms</span>
               </div> <!-- configuration-method after -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
               <div class="chronological-class-name">com.crm.qa.testscases.CompaniesPageTest</div> <!-- chronological-class-name -->
               <div class="configuration-method before">
                 <span class="method-name">setUp</span>
-                <span class="method-start">183704 ms</span>
+                <span class="method-start">154766 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
                 <span class="method-name">selectDeleteTest</span>
-                <span class="method-start">193864 ms</span>
+                <span class="method-start">164864 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">tearDown</span>
-                <span class="method-start">194120 ms</span>
+                <span class="method-start">165078 ms</span>
               </div> <!-- configuration-method after -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
               <div class="chronological-class-name">com.crm.qa.testscases.HomePageTest</div> <!-- chronological-class-name -->
               <div class="configuration-method before">
                 <span class="method-name">setUp</span>
-                <span class="method-start">194864 ms</span>
+                <span class="method-start">166028 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
                 <span class="method-name">clickOnCompniesLinkTest</span>
-                <span class="method-start">204865 ms</span>
+                <span class="method-start">176188 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">tearDown</span>
-                <span class="method-start">205204 ms</span>
+                <span class="method-start">176456 ms</span>
               </div> <!-- configuration-method after -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
               <div class="chronological-class-name">com.crm.qa.testscases.LoginPageTest</div> <!-- chronological-class-name -->
               <div class="configuration-method before">
                 <span class="method-name">setUp</span>
-                <span class="method-start">205949 ms</span>
+                <span class="method-start">177174 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
                 <span class="method-name">incorrectUserNameloginTest</span>
-                <span class="method-start">213945 ms</span>
+                <span class="method-start">184824 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">tearDown</span>
-                <span class="method-start">214371 ms</span>
+                <span class="method-start">185229 ms</span>
               </div> <!-- configuration-method after -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
               <div class="chronological-class-name">com.crm.qa.testscases.CompaniesPageTest</div> <!-- chronological-class-name -->
               <div class="configuration-method before">
                 <span class="method-name">setUp</span>
-                <span class="method-start">215180 ms</span>
+                <span class="method-start">185912 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
                 <span class="method-name">actionLabelCheckTest</span>
-                <span class="method-start">225680 ms</span>
+                <span class="method-start">196032 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">tearDown</span>
-                <span class="method-start">225739 ms</span>
+                <span class="method-start">196082 ms</span>
               </div> <!-- configuration-method after -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
               <div class="chronological-class-name">com.crm.qa.testscases.HomePageTest</div> <!-- chronological-class-name -->
               <div class="configuration-method before">
                 <span class="method-name">setUp</span>
-                <span class="method-start">226517 ms</span>
+                <span class="method-start">196842 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
                 <span class="method-name">clickOnDealsLinkTest</span>
-                <span class="method-start">237062 ms</span>
+                <span class="method-start">207037 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">tearDown</span>
-                <span class="method-start">237321 ms</span>
+                <span class="method-start">207401 ms</span>
               </div> <!-- configuration-method after -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
               <div class="chronological-class-name">com.crm.qa.testscases.LoginPageTest</div> <!-- chronological-class-name -->
               <div class="configuration-method before">
                 <span class="method-name">setUp</span>
-                <span class="method-start">238555 ms</span>
+                <span class="method-start">208179 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
                 <span class="method-name">incorrectPasswordloginPageTest</span>
-                <span class="method-start">247251 ms</span>
+                <span class="method-start">216101 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">tearDown</span>
-                <span class="method-start">247728 ms</span>
+                <span class="method-start">216511 ms</span>
               </div> <!-- configuration-method after -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
               <div class="chronological-class-name">com.crm.qa.testscases.HomePageTest</div> <!-- chronological-class-name -->
               <div class="configuration-method before">
                 <span class="method-name">setUp</span>
-                <span class="method-start">248491 ms</span>
+                <span class="method-start">217201 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
                 <span class="method-name">clickOnTasksLinkTest</span>
-                <span class="method-start">260015 ms</span>
+                <span class="method-start">227116 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">tearDown</span>
-                <span class="method-start">260365 ms</span>
+                <span class="method-start">227449 ms</span>
               </div> <!-- configuration-method after -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
               <div class="chronological-class-name">com.crm.qa.testscases.LoginPageTest</div> <!-- chronological-class-name -->
               <div class="configuration-method before">
                 <span class="method-name">setUp</span>
-                <span class="method-start">261134 ms</span>
+                <span class="method-start">228212 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
                 <span class="method-name">SignUpPageTest</span>
-                <span class="method-start">269214 ms</span>
+                <span class="method-start">235961 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">tearDown</span>
-                <span class="method-start">270997 ms</span>
+                <span class="method-start">237769 ms</span>
               </div> <!-- configuration-method after -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
               <div class="chronological-class-name">com.crm.qa.testscases.HomePageTest</div> <!-- chronological-class-name -->
               <div class="configuration-method before">
                 <span class="method-name">setUp</span>
-                <span class="method-start">271685 ms</span>
+                <span class="method-start">239151 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
                 <span class="method-name">clickOnCasesLinkTest</span>
-                <span class="method-start">283715 ms</span>
+                <span class="method-start">248956 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">tearDown</span>
-                <span class="method-start">284016 ms</span>
+                <span class="method-start">249288 ms</span>
               </div> <!-- configuration-method after -->
               <div class="configuration-method before">
                 <span class="method-name">setUp</span>
-                <span class="method-start">284737 ms</span>
+                <span class="method-start">250886 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
                 <span class="method-name">clickOnCallsLinkTest</span>
-                <span class="method-start">295957 ms</span>
+                <span class="method-start">261135 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">tearDown</span>
-                <span class="method-start">296192 ms</span>
+                <span class="method-start">261510 ms</span>
               </div> <!-- configuration-method after -->
               <div class="configuration-method before">
                 <span class="method-name">setUp</span>
-                <span class="method-start">297026 ms</span>
+                <span class="method-start">262644 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
                 <span class="method-name">clickOnDocumentsLinkPageTest</span>
-                <span class="method-start">306875 ms</span>
+                <span class="method-start">272075 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">tearDown</span>
-                <span class="method-start">307055 ms</span>
+                <span class="method-start">272267 ms</span>
               </div> <!-- configuration-method after -->
               <div class="configuration-method before">
                 <span class="method-name">setUp</span>
-                <span class="method-start">307775 ms</span>
+                <span class="method-start">272980 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
                 <span class="method-name">clickOnEmailLinkPageTest</span>
-                <span class="method-start">317487 ms</span>
+                <span class="method-start">282600 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">tearDown</span>
-                <span class="method-start">318511 ms</span>
+                <span class="method-start">283010 ms</span>
               </div> <!-- configuration-method after -->
               <div class="configuration-method before">
                 <span class="method-name">setUp</span>
-                <span class="method-start">319263 ms</span>
+                <span class="method-start">283741 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
                 <span class="method-name">clickOnCampaignLinkPageTest</span>
-                <span class="method-start">329932 ms</span>
+                <span class="method-start">293825 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">tearDown</span>
-                <span class="method-start">330326 ms</span>
+                <span class="method-start">294186 ms</span>
               </div> <!-- configuration-method after -->
               <div class="configuration-method before">
                 <span class="method-name">setUp</span>
-                <span class="method-start">331071 ms</span>
+                <span class="method-start">295541 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
                 <span class="method-name">clickOnFormsPageLinkTest</span>
-                <span class="method-start">340623 ms</span>
+                <span class="method-start">307413 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">tearDown</span>
-                <span class="method-start">341183 ms</span>
+                <span class="method-start">307686 ms</span>
               </div> <!-- configuration-method after -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->
