@@ -6,13 +6,13 @@
   </listeners>
   <test name="Test(failed)" parallel="classes">
     <classes>
-      <class name="com.crm.qa.testscases.CalenderPageTest">
+      <class name="com.crm.qa.testscases.CampaignsPageTest">
         <methods>
-          <include name="tearDown"/>
           <include name="setUp"/>
-          <include name="selectMonthOnCalenderTest"/>
+          <include name="clickOnNewLinkTest"/>
+          <include name="tearDown"/>
         </methods>
-      </class> <!-- com.crm.qa.testscases.CalenderPageTest -->
+      </class> <!-- com.crm.qa.testscases.CampaignsPageTest -->
     </classes>
   </test> <!-- Test(failed) -->
 </suite> <!-- Failed suite [Suite] -->

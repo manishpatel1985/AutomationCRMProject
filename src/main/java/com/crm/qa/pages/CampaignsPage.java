@@ -21,7 +21,7 @@ public class CampaignsPage extends TestBase {
 	@FindBy(xpath="//button[contains(text(),'New')]")
 	WebElement newbutton;
 	
-	@FindBy(xpath="//div[@class='ui header item mb5 light-black']")
+	@FindBy(xpath="//div[@class='ui fluid container']//div[@class='ui navbar fixed main menu']")
 	WebElement newcampaignlabel;
 	
 	@FindBy(name="name")
