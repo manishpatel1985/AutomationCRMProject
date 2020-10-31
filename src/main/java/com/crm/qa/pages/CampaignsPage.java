@@ -1,5 +1,7 @@
 package com.crm.qa.pages;
-
+/*
+ * Changes has been added
+ */
 
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
