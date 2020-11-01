@@ -35,7 +35,7 @@ public class CalenderPage extends TestBase{
 	
 	public boolean selectMonthOnCalender() {
 		selectcalendermonth.click();
-		selectcalendermonth.click();
+		
 		selectcalenderdate.click();
 		return	correctdate.isEnabled();
 	}
