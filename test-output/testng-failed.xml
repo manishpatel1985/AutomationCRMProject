@@ -1,25 +1,15 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
-<suite guice-stage="DEVELOPMENT" name="Failed suite [Suite]" parallel="classes">
-  <listeners>
-    <listener class-name="com.qa.ExtendReportListener.ExtentReportListener"/>
-  </listeners>
-  <test name="Test(failed)" parallel="classes">
+<suite guice-stage="DEVELOPMENT" name="Failed suite [Default suite]">
+  <test name="Default test(failed)">
     <classes>
-      <class name="com.crm.qa.testscases.CalenderPageTest">
-        <methods>
-          <include name="tearDown"/>
-          <include name="setUp"/>
-          <include name="selectMonthOnCalenderTest"/>
-        </methods>
-      </class> <!-- com.crm.qa.testscases.CalenderPageTest -->
       <class name="com.crm.qa.testscases.ContactsPageTest">
         <methods>
-          <include name="createNewContactsTest" invocation-numbers="1 2"/>
           <include name="tearDown"/>
           <include name="setUp"/>
+          <include name="deleteContactsTest"/>
         </methods>
       </class> <!-- com.crm.qa.testscases.ContactsPageTest -->
     </classes>
-  </test> <!-- Test(failed) -->
-</suite> <!-- Failed suite [Suite] -->
+  </test> <!-- Default test(failed) -->
+</suite> <!-- Failed suite [Default suite] -->

@@ -38,7 +38,7 @@ public class ContactsPageTest extends TestBase {
 	
 	
 	
-	/*@Test(priority=1)
+	@Test(priority=1)
 	public void selectContactDipakTest() {
 	Assert.assertTrue(contactsPage.selectContactDipak());
 	}
@@ -46,6 +46,13 @@ public class ContactsPageTest extends TestBase {
 	@Test(priority=2)
 	public void selectContactManishTest() {
 	Assert.assertTrue(contactsPage.selectContactManish());
+	}
+	
+	/*@Test(priority=3)
+	public void deleteContactsTest() throws InterruptedException {
+		Assert.assertTrue(contactsPage.deleteContactColin());
+		Assert.assertTrue(contactsPage.deleteContactMatt());
+		Assert.assertTrue(contactsPage.deleteContactDominic());
 	}*/
 	
 	@DataProvider
