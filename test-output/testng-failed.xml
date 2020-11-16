@@ -1,15 +1,18 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
-<suite guice-stage="DEVELOPMENT" name="Failed suite [Default suite]">
-  <test name="Default test(failed)">
+<suite guice-stage="DEVELOPMENT" name="Failed suite [Suite]" parallel="classes">
+  <listeners>
+    <listener class-name="com.qa.ExtendReportListener.ExtentReportListener"/>
+  </listeners>
+  <test name="Test(failed)" parallel="classes">
     <classes>
       <class name="com.crm.qa.testscases.ContactsPageTest">
         <methods>
+          <include name="createNewContactsTest" invocation-numbers="0 1"/>
           <include name="tearDown"/>
           <include name="setUp"/>
-          <include name="deleteContactsTest"/>
         </methods>
       </class> <!-- com.crm.qa.testscases.ContactsPageTest -->
     </classes>
-  </test> <!-- Default test(failed) -->
-</suite> <!-- Failed suite [Default suite] -->
+  </test> <!-- Test(failed) -->
+</suite> <!-- Failed suite [Suite] -->

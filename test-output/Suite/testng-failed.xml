@@ -8,9 +8,9 @@
     <classes>
       <class name="com.crm.qa.testscases.ContactsPageTest">
         <methods>
+          <include name="createNewContactsTest" invocation-numbers="0 1"/>
           <include name="tearDown"/>
           <include name="setUp"/>
-          <include name="deleteContactsTest"/>
         </methods>
       </class> <!-- com.crm.qa.testscases.ContactsPageTest -->
     </classes>
